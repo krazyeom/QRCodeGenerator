@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE202FAA1AAD3EBA002D8057 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE202FA91AAD3EBA002D8057 /* main.m */; };
+		CE202FAD1AAD3EBA002D8057 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE202FAC1AAD3EBA002D8057 /* AppDelegate.m */; };
+		CE202FB01AAD3EBA002D8057 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE202FAF1AAD3EBA002D8057 /* ViewController.m */; };
+		CE202FB31AAD3EBA002D8057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE202FB11AAD3EBA002D8057 /* Main.storyboard */; };
+		CE202FB51AAD3EBA002D8057 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE202FB41AAD3EBA002D8057 /* Images.xcassets */; };
+		CE202FB81AAD3EBA002D8057 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE202FB61AAD3EBA002D8057 /* LaunchScreen.xib */; };
+		CE202FC41AAD3EBA002D8057 /* QRGenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE202FC31AAD3EBA002D8057 /* QRGenTests.m */; };
+		CE202FD71AAD3EC8002D8057 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE202FD61AAD3EC8002D8057 /* InterfaceController.m */; };
+		CE202FD91AAD3EC8002D8057 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE202FD81AAD3EC8002D8057 /* Images.xcassets */; };
+		CE202FDD1AAD3EC8002D8057 /* QRGen WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = CE202FDC1AAD3EC8002D8057 /* QRGen WatchKit App.app */; };
+		CE202FE51AAD3EC8002D8057 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE202FE31AAD3EC8002D8057 /* Interface.storyboard */; };
+		CE202FE71AAD3EC8002D8057 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE202FE61AAD3EC8002D8057 /* Images.xcassets */; };
+		CE202FEA1AAD3EC8002D8057 /* QRGen WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CE202FD11AAD3EC8002D8057 /* QRGen WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CE2030031AAD3F4B002D8057 /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = CE202FF31AAD3F4B002D8057 /* bitstream.c */; };
+		CE2030041AAD3F4B002D8057 /* mask.c in Sources */ = {isa = PBXBuildFile; fileRef = CE202FF51AAD3F4B002D8057 /* mask.c */; };
+		CE2030051AAD3F4B002D8057 /* qrencode.c in Sources */ = {isa = PBXBuildFile; fileRef = CE202FF71AAD3F4B002D8057 /* qrencode.c */; };
+		CE2030061AAD3F4B002D8057 /* qrinput.c in Sources */ = {isa = PBXBuildFile; fileRef = CE202FF91AAD3F4B002D8057 /* qrinput.c */; };
+		CE2030071AAD3F4B002D8057 /* qrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = CE202FFB1AAD3F4B002D8057 /* qrspec.c */; };
+		CE2030081AAD3F4B002D8057 /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = CE202FFD1AAD3F4B002D8057 /* rscode.c */; };
+		CE2030091AAD3F4B002D8057 /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = CE202FFF1AAD3F4B002D8057 /* split.c */; };
+		CE20300A1AAD3F4B002D8057 /* UIImage+MDQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2030021AAD3F4B002D8057 /* UIImage+MDQRCode.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE202FBE1AAD3EBA002D8057 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE202F9C1AAD3EBA002D8057 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE202FA31AAD3EBA002D8057;
+			remoteInfo = QRGen;
+		};
+		CE202FDE1AAD3EC8002D8057 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE202F9C1AAD3EBA002D8057 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE202FDB1AAD3EC8002D8057;
+			remoteInfo = "QRGen WatchKit App";
+		};
+		CE202FE81AAD3EC8002D8057 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE202F9C1AAD3EBA002D8057 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE202FD01AAD3EC8002D8057;
+			remoteInfo = "QRGen WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE202FF11AAD3EC8002D8057 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CE202FEA1AAD3EC8002D8057 /* QRGen WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CE202FA41AAD3EBA002D8057 /* QRGen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRGen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE202FA81AAD3EBA002D8057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE202FA91AAD3EBA002D8057 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE202FAB1AAD3EBA002D8057 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE202FAC1AAD3EBA002D8057 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE202FAE1AAD3EBA002D8057 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CE202FAF1AAD3EBA002D8057 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CE202FB21AAD3EBA002D8057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE202FB41AAD3EBA002D8057 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CE202FB71AAD3EBA002D8057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CE202FBD1AAD3EBA002D8057 /* QRGenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRGenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE202FC21AAD3EBA002D8057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE202FC31AAD3EBA002D8057 /* QRGenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRGenTests.m; sourceTree = "<group>"; };
+		CE202FD11AAD3EC8002D8057 /* QRGen WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "QRGen WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE202FD41AAD3EC8002D8057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE202FD51AAD3EC8002D8057 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		CE202FD61AAD3EC8002D8057 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		CE202FD81AAD3EC8002D8057 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CE202FDC1AAD3EC8002D8057 /* QRGen WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QRGen WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE202FE21AAD3EC8002D8057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE202FE41AAD3EC8002D8057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CE202FE61AAD3EC8002D8057 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CE202FF31AAD3F4B002D8057 /* bitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
+		CE202FF41AAD3F4B002D8057 /* bitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
+		CE202FF51AAD3F4B002D8057 /* mask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mask.c; sourceTree = "<group>"; };
+		CE202FF61AAD3F4B002D8057 /* mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mask.h; sourceTree = "<group>"; };
+		CE202FF71AAD3F4B002D8057 /* qrencode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrencode.c; sourceTree = "<group>"; };
+		CE202FF81AAD3F4B002D8057 /* qrencode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrencode.h; sourceTree = "<group>"; };
+		CE202FF91AAD3F4B002D8057 /* qrinput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrinput.c; sourceTree = "<group>"; };
+		CE202FFA1AAD3F4B002D8057 /* qrinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrinput.h; sourceTree = "<group>"; };
+		CE202FFB1AAD3F4B002D8057 /* qrspec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrspec.c; sourceTree = "<group>"; };
+		CE202FFC1AAD3F4B002D8057 /* qrspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrspec.h; sourceTree = "<group>"; };
+		CE202FFD1AAD3F4B002D8057 /* rscode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rscode.c; sourceTree = "<group>"; };
+		CE202FFE1AAD3F4B002D8057 /* rscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
+		CE202FFF1AAD3F4B002D8057 /* split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = split.c; sourceTree = "<group>"; };
+		CE2030001AAD3F4B002D8057 /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
+		CE2030011AAD3F4B002D8057 /* UIImage+MDQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MDQRCode.h"; sourceTree = "<group>"; };
+		CE2030021AAD3F4B002D8057 /* UIImage+MDQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MDQRCode.m"; sourceTree = "<group>"; };
+		CE20300B1AAD5E58002D8057 /* QRGen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = QRGen.entitlements; sourceTree = "<group>"; };
+		CE20300C1AAD5F7F002D8057 /* QRGen WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "QRGen WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE202FA11AAD3EBA002D8057 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE202FBA1AAD3EBA002D8057 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE202FCE1AAD3EC8002D8057 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE202F9B1AAD3EBA002D8057 = {
+			isa = PBXGroup;
+			children = (
+				CE202FA61AAD3EBA002D8057 /* QRGen */,
+				CE202FC01AAD3EBA002D8057 /* QRGenTests */,
+				CE202FD21AAD3EC8002D8057 /* QRGen WatchKit Extension */,
+				CE202FE01AAD3EC8002D8057 /* QRGen WatchKit App */,
+				CE202FA51AAD3EBA002D8057 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE202FA51AAD3EBA002D8057 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE202FA41AAD3EBA002D8057 /* QRGen.app */,
+				CE202FBD1AAD3EBA002D8057 /* QRGenTests.xctest */,
+				CE202FD11AAD3EC8002D8057 /* QRGen WatchKit Extension.appex */,
+				CE202FDC1AAD3EC8002D8057 /* QRGen WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE202FA61AAD3EBA002D8057 /* QRGen */ = {
+			isa = PBXGroup;
+			children = (
+				CE20300B1AAD5E58002D8057 /* QRGen.entitlements */,
+				CE202FAB1AAD3EBA002D8057 /* AppDelegate.h */,
+				CE202FAC1AAD3EBA002D8057 /* AppDelegate.m */,
+				CE202FAE1AAD3EBA002D8057 /* ViewController.h */,
+				CE202FAF1AAD3EBA002D8057 /* ViewController.m */,
+				CE202FB11AAD3EBA002D8057 /* Main.storyboard */,
+				CE202FB41AAD3EBA002D8057 /* Images.xcassets */,
+				CE202FB61AAD3EBA002D8057 /* LaunchScreen.xib */,
+				CE202FA71AAD3EBA002D8057 /* Supporting Files */,
+			);
+			path = QRGen;
+			sourceTree = "<group>";
+		};
+		CE202FA71AAD3EBA002D8057 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE202FA81AAD3EBA002D8057 /* Info.plist */,
+				CE202FA91AAD3EBA002D8057 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE202FC01AAD3EBA002D8057 /* QRGenTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE202FC31AAD3EBA002D8057 /* QRGenTests.m */,
+				CE202FC11AAD3EBA002D8057 /* Supporting Files */,
+			);
+			path = QRGenTests;
+			sourceTree = "<group>";
+		};
+		CE202FC11AAD3EBA002D8057 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE202FC21AAD3EBA002D8057 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE202FD21AAD3EC8002D8057 /* QRGen WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE20300C1AAD5F7F002D8057 /* QRGen WatchKit Extension.entitlements */,
+				CE202FF21AAD3F4B002D8057 /* libqrencode */,
+				CE2030011AAD3F4B002D8057 /* UIImage+MDQRCode.h */,
+				CE2030021AAD3F4B002D8057 /* UIImage+MDQRCode.m */,
+				CE202FD51AAD3EC8002D8057 /* InterfaceController.h */,
+				CE202FD61AAD3EC8002D8057 /* InterfaceController.m */,
+				CE202FD81AAD3EC8002D8057 /* Images.xcassets */,
+				CE202FD31AAD3EC8002D8057 /* Supporting Files */,
+			);
+			path = "QRGen WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		CE202FD31AAD3EC8002D8057 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE202FD41AAD3EC8002D8057 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE202FE01AAD3EC8002D8057 /* QRGen WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				CE202FE31AAD3EC8002D8057 /* Interface.storyboard */,
+				CE202FE61AAD3EC8002D8057 /* Images.xcassets */,
+				CE202FE11AAD3EC8002D8057 /* Supporting Files */,
+			);
+			path = "QRGen WatchKit App";
+			sourceTree = "<group>";
+		};
+		CE202FE11AAD3EC8002D8057 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE202FE21AAD3EC8002D8057 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE202FF21AAD3F4B002D8057 /* libqrencode */ = {
+			isa = PBXGroup;
+			children = (
+				CE202FF31AAD3F4B002D8057 /* bitstream.c */,
+				CE202FF41AAD3F4B002D8057 /* bitstream.h */,
+				CE202FF51AAD3F4B002D8057 /* mask.c */,
+				CE202FF61AAD3F4B002D8057 /* mask.h */,
+				CE202FF71AAD3F4B002D8057 /* qrencode.c */,
+				CE202FF81AAD3F4B002D8057 /* qrencode.h */,
+				CE202FF91AAD3F4B002D8057 /* qrinput.c */,
+				CE202FFA1AAD3F4B002D8057 /* qrinput.h */,
+				CE202FFB1AAD3F4B002D8057 /* qrspec.c */,
+				CE202FFC1AAD3F4B002D8057 /* qrspec.h */,
+				CE202FFD1AAD3F4B002D8057 /* rscode.c */,
+				CE202FFE1AAD3F4B002D8057 /* rscode.h */,
+				CE202FFF1AAD3F4B002D8057 /* split.c */,
+				CE2030001AAD3F4B002D8057 /* split.h */,
+			);
+			path = libqrencode;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE202FA31AAD3EBA002D8057 /* QRGen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE202FC71AAD3EBA002D8057 /* Build configuration list for PBXNativeTarget "QRGen" */;
+			buildPhases = (
+				CE202FA01AAD3EBA002D8057 /* Sources */,
+				CE202FA11AAD3EBA002D8057 /* Frameworks */,
+				CE202FA21AAD3EBA002D8057 /* Resources */,
+				CE202FF11AAD3EC8002D8057 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE202FE91AAD3EC8002D8057 /* PBXTargetDependency */,
+			);
+			name = QRGen;
+			productName = QRGen;
+			productReference = CE202FA41AAD3EBA002D8057 /* QRGen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE202FBC1AAD3EBA002D8057 /* QRGenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE202FCA1AAD3EBA002D8057 /* Build configuration list for PBXNativeTarget "QRGenTests" */;
+			buildPhases = (
+				CE202FB91AAD3EBA002D8057 /* Sources */,
+				CE202FBA1AAD3EBA002D8057 /* Frameworks */,
+				CE202FBB1AAD3EBA002D8057 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE202FBF1AAD3EBA002D8057 /* PBXTargetDependency */,
+			);
+			name = QRGenTests;
+			productName = QRGenTests;
+			productReference = CE202FBD1AAD3EBA002D8057 /* QRGenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE202FD01AAD3EC8002D8057 /* QRGen WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE202FEE1AAD3EC8002D8057 /* Build configuration list for PBXNativeTarget "QRGen WatchKit Extension" */;
+			buildPhases = (
+				CE202FCD1AAD3EC8002D8057 /* Sources */,
+				CE202FCE1AAD3EC8002D8057 /* Frameworks */,
+				CE202FCF1AAD3EC8002D8057 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE202FDF1AAD3EC8002D8057 /* PBXTargetDependency */,
+			);
+			name = "QRGen WatchKit Extension";
+			productName = "QRGen WatchKit Extension";
+			productReference = CE202FD11AAD3EC8002D8057 /* QRGen WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		CE202FDB1AAD3EC8002D8057 /* QRGen WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE202FEB1AAD3EC8002D8057 /* Build configuration list for PBXNativeTarget "QRGen WatchKit App" */;
+			buildPhases = (
+				CE202FDA1AAD3EC8002D8057 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QRGen WatchKit App";
+			productName = "QRGen WatchKit App";
+			productReference = CE202FDC1AAD3EC8002D8057 /* QRGen WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE202F9C1AAD3EBA002D8057 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Appilogue;
+				TargetAttributes = {
+					CE202FA31AAD3EBA002D8057 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 9W3BR8D5NN;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					CE202FBC1AAD3EBA002D8057 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = CE202FA31AAD3EBA002D8057;
+					};
+					CE202FD01AAD3EC8002D8057 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 9W3BR8D5NN;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					CE202FDB1AAD3EC8002D8057 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = CE202F9F1AAD3EBA002D8057 /* Build configuration list for PBXProject "QRGen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE202F9B1AAD3EBA002D8057;
+			productRefGroup = CE202FA51AAD3EBA002D8057 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE202FA31AAD3EBA002D8057 /* QRGen */,
+				CE202FBC1AAD3EBA002D8057 /* QRGenTests */,
+				CE202FD01AAD3EC8002D8057 /* QRGen WatchKit Extension */,
+				CE202FDB1AAD3EC8002D8057 /* QRGen WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE202FA21AAD3EBA002D8057 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE202FB31AAD3EBA002D8057 /* Main.storyboard in Resources */,
+				CE202FB81AAD3EBA002D8057 /* LaunchScreen.xib in Resources */,
+				CE202FB51AAD3EBA002D8057 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE202FBB1AAD3EBA002D8057 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE202FCF1AAD3EC8002D8057 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE202FDD1AAD3EC8002D8057 /* QRGen WatchKit App.app in Resources */,
+				CE202FD91AAD3EC8002D8057 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE202FDA1AAD3EC8002D8057 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE202FE51AAD3EC8002D8057 /* Interface.storyboard in Resources */,
+				CE202FE71AAD3EC8002D8057 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE202FA01AAD3EBA002D8057 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE202FB01AAD3EBA002D8057 /* ViewController.m in Sources */,
+				CE202FAD1AAD3EBA002D8057 /* AppDelegate.m in Sources */,
+				CE202FAA1AAD3EBA002D8057 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE202FB91AAD3EBA002D8057 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE202FC41AAD3EBA002D8057 /* QRGenTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE202FCD1AAD3EC8002D8057 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE20300A1AAD3F4B002D8057 /* UIImage+MDQRCode.m in Sources */,
+				CE2030051AAD3F4B002D8057 /* qrencode.c in Sources */,
+				CE2030071AAD3F4B002D8057 /* qrspec.c in Sources */,
+				CE2030041AAD3F4B002D8057 /* mask.c in Sources */,
+				CE2030081AAD3F4B002D8057 /* rscode.c in Sources */,
+				CE2030091AAD3F4B002D8057 /* split.c in Sources */,
+				CE2030061AAD3F4B002D8057 /* qrinput.c in Sources */,
+				CE202FD71AAD3EC8002D8057 /* InterfaceController.m in Sources */,
+				CE2030031AAD3F4B002D8057 /* bitstream.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE202FBF1AAD3EBA002D8057 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE202FA31AAD3EBA002D8057 /* QRGen */;
+			targetProxy = CE202FBE1AAD3EBA002D8057 /* PBXContainerItemProxy */;
+		};
+		CE202FDF1AAD3EC8002D8057 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE202FDB1AAD3EC8002D8057 /* QRGen WatchKit App */;
+			targetProxy = CE202FDE1AAD3EC8002D8057 /* PBXContainerItemProxy */;
+		};
+		CE202FE91AAD3EC8002D8057 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE202FD01AAD3EC8002D8057 /* QRGen WatchKit Extension */;
+			targetProxy = CE202FE81AAD3EC8002D8057 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE202FB11AAD3EBA002D8057 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE202FB21AAD3EBA002D8057 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE202FB61AAD3EBA002D8057 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE202FB71AAD3EBA002D8057 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		CE202FE31AAD3EC8002D8057 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE202FE41AAD3EC8002D8057 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE202FC51AAD3EBA002D8057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE202FC61AAD3EBA002D8057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE202FC81AAD3EBA002D8057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QRGen/QRGen.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = QRGen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		CE202FC91AAD3EBA002D8057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QRGen/QRGen.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = QRGen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		CE202FCB1AAD3EBA002D8057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QRGenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRGen.app/QRGen";
+			};
+			name = Debug;
+		};
+		CE202FCC1AAD3EBA002D8057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QRGenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRGen.app/QRGen";
+			};
+			name = Release;
+		};
+		CE202FEC1AAD3EC8002D8057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = QRGen_WatchKit_Extension;
+				INFOPLIST_FILE = "QRGen WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		CE202FED1AAD3EC8002D8057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = QRGen_WatchKit_Extension;
+				INFOPLIST_FILE = "QRGen WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		CE202FEF1AAD3EC8002D8057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "QRGen WatchKit Extension/QRGen WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "QRGen WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CE202FF01AAD3EC8002D8057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "QRGen WatchKit Extension/QRGen WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "QRGen WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE202F9F1AAD3EBA002D8057 /* Build configuration list for PBXProject "QRGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE202FC51AAD3EBA002D8057 /* Debug */,
+				CE202FC61AAD3EBA002D8057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE202FC71AAD3EBA002D8057 /* Build configuration list for PBXNativeTarget "QRGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE202FC81AAD3EBA002D8057 /* Debug */,
+				CE202FC91AAD3EBA002D8057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE202FCA1AAD3EBA002D8057 /* Build configuration list for PBXNativeTarget "QRGenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE202FCB1AAD3EBA002D8057 /* Debug */,
+				CE202FCC1AAD3EBA002D8057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE202FEB1AAD3EC8002D8057 /* Build configuration list for PBXNativeTarget "QRGen WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE202FEC1AAD3EC8002D8057 /* Debug */,
+				CE202FED1AAD3EC8002D8057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE202FEE1AAD3EC8002D8057 /* Build configuration list for PBXNativeTarget "QRGen WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE202FEF1AAD3EC8002D8057 /* Debug */,
+				CE202FF01AAD3EC8002D8057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE202F9C1AAD3EBA002D8057 /* Project object */;
+}
