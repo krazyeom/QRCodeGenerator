@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4A4FDBB2-5039-4387-8D12-546A682D4D90</string>
+	<key>IDESourceControlProjectName</key>
+	<string>QRGen</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AEB738C0A6F28E67494D36E046747DA1321157CF</key>
+		<string>https://github.com/krazyeom/QRCodeGenerator.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>QRGen.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AEB738C0A6F28E67494D36E046747DA1321157CF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/krazyeom/QRCodeGenerator.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AEB738C0A6F28E67494D36E046747DA1321157CF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AEB738C0A6F28E67494D36E046747DA1321157CF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>QRCodeGenerator</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,21 +1,108 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6750" systemVersion="14C109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EFQ-ZU-8DJ">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14D87h" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EFQ-ZU-8DJ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Input Interface Controller-->
         <scene sceneID="e6N-pg-qS3">
             <objects>
-                <controller id="EFQ-ZU-8DJ">
+                <controller id="EFQ-ZU-8DJ" customClass="InputInterfaceController">
                     <items>
-                        <button width="1" alignment="left" title="Button" id="vW3-Ue-UmY">
+                        <label alignment="center" text="Starbucks shop barcode generator" textAlignment="center" numberOfLines="10" id="m5K-Hx-nqN"/>
+                        <group width="1" alignment="center" id="w3k-Td-WlK">
+                            <items>
+                                <button width="20" alignment="center" title="+" id="cAN-dt-cd0">
+                                    <connections>
+                                        <action selector="firstPlus" destination="EFQ-ZU-8DJ" id="YO5-NM-4H9"/>
+                                    </connections>
+                                </button>
+                                <button width="20" alignment="center" title="+" id="VRJ-XW-QVp">
+                                    <connections>
+                                        <action selector="secondPlus" destination="EFQ-ZU-8DJ" id="efN-7P-aar"/>
+                                    </connections>
+                                </button>
+                                <button width="20" alignment="center" title="+" id="o9j-9c-B6C">
+                                    <connections>
+                                        <action selector="thirdPlus" destination="EFQ-ZU-8DJ" id="vje-o2-egE"/>
+                                    </connections>
+                                </button>
+                                <button width="20" alignment="center" title="+" id="dNR-Tb-Mmh">
+                                    <connections>
+                                        <action selector="fourthPlus" destination="EFQ-ZU-8DJ" id="g09-st-Nqb"/>
+                                    </connections>
+                                </button>
+                                <button width="20" alignment="center" title="+" id="aC5-SF-bGu">
+                                    <connections>
+                                        <action selector="fifthPlus" destination="EFQ-ZU-8DJ" id="W9r-eU-Vfd"/>
+                                    </connections>
+                                </button>
+                                <button width="20" alignment="center" title="+" id="ov4-Hi-8Xj">
+                                    <connections>
+                                        <action selector="sixthPlus" destination="EFQ-ZU-8DJ" id="F8w-0z-kZN"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" id="eg9-iN-KqA">
+                            <items>
+                                <label width="20" alignment="center" text="0" textAlignment="center" id="fik-FB-y9X"/>
+                                <label width="20" alignment="center" text="0" textAlignment="center" id="nlX-46-8ST"/>
+                                <label width="20" alignment="center" text="0" textAlignment="center" id="wha-2j-Z7e"/>
+                                <label width="20" alignment="center" text="0" textAlignment="center" id="kiS-FR-z12"/>
+                                <label width="20" alignment="center" text="0" textAlignment="center" id="Ddd-6q-E5F"/>
+                                <label width="20" alignment="center" text="0" textAlignment="center" id="K7e-B0-3tw"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" id="nVX-bv-mcj">
+                            <items>
+                                <button width="20" alignment="center" title="-" id="5ox-5a-ah5">
+                                    <connections>
+                                        <action selector="firstMinus" destination="EFQ-ZU-8DJ" id="Jqd-pt-DP2"/>
+                                    </connections>
+                                </button>
+                                <button width="20" alignment="center" title="-" id="3gw-hO-uK5">
+                                    <connections>
+                                        <action selector="secondMinus" destination="EFQ-ZU-8DJ" id="c6m-ok-2BH"/>
+                                    </connections>
+                                </button>
+                                <button width="20" alignment="center" title="-" id="glv-L9-RBS">
+                                    <connections>
+                                        <action selector="thirdMinus" destination="EFQ-ZU-8DJ" id="98B-eP-CIO"/>
+                                    </connections>
+                                </button>
+                                <button width="20" alignment="center" title="-" id="ybk-tA-08C">
+                                    <connections>
+                                        <action selector="fourthMinus" destination="EFQ-ZU-8DJ" id="d1V-bL-6Zg"/>
+                                    </connections>
+                                </button>
+                                <button width="20" alignment="center" title="-" id="iG9-t4-1DC">
+                                    <connections>
+                                        <action selector="fifthMinus" destination="EFQ-ZU-8DJ" id="pDS-XV-w4T"/>
+                                    </connections>
+                                </button>
+                                <button width="20" alignment="center" title="-" id="swf-Ji-VmG">
+                                    <connections>
+                                        <action selector="sixthMinus" destination="EFQ-ZU-8DJ" id="DBu-Lg-aAU"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Generate" id="vW3-Ue-UmY">
                             <connections>
-                                <segue destination="AgC-eL-Hgc" kind="push" id="5bV-xh-c6R"/>
+                                <segue destination="AgC-eL-Hgc" kind="push" identifier="genSegue" id="HxV-jH-Wop"/>
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="fifthLabel" destination="Ddd-6q-E5F" id="0J4-FJ-yqn"/>
+                        <outlet property="firstLabel" destination="fik-FB-y9X" id="JTS-MT-zC2"/>
+                        <outlet property="fourthLabel" destination="kiS-FR-z12" id="uDZ-Ut-43k"/>
+                        <outlet property="secondLabel" destination="nlX-46-8ST" id="2iM-Wo-6SL"/>
+                        <outlet property="sixthLabel" destination="K7e-B0-3tw" id="CD5-i7-EjP"/>
+                        <outlet property="thirdLabel" destination="wha-2j-Z7e" id="jZW-xV-Dat"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="262" y="424"/>
@@ -33,7 +120,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="619" y="424"/>
+            <point key="canvasLocation" x="488" y="424"/>
         </scene>
     </scenes>
 </document>

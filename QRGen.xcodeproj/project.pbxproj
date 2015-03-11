@@ -28,6 +28,7 @@
 		CE2030081AAD3F4B002D8057 /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = CE202FFD1AAD3F4B002D8057 /* rscode.c */; };
 		CE2030091AAD3F4B002D8057 /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = CE202FFF1AAD3F4B002D8057 /* split.c */; };
 		CE20300A1AAD3F4B002D8057 /* UIImage+MDQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2030021AAD3F4B002D8057 /* UIImage+MDQRCode.m */; };
+		CEDAD0F21AB00FFB00A93B83 /* InputInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDAD0F11AB00FFB00A93B83 /* InputInterfaceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,8 @@
 		CE2030021AAD3F4B002D8057 /* UIImage+MDQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MDQRCode.m"; sourceTree = "<group>"; };
 		CE20300B1AAD5E58002D8057 /* QRGen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = QRGen.entitlements; sourceTree = "<group>"; };
 		CE20300C1AAD5F7F002D8057 /* QRGen WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "QRGen WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		CEDAD0F01AB00FFB00A93B83 /* InputInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputInterfaceController.h; sourceTree = "<group>"; };
+		CEDAD0F11AB00FFB00A93B83 /* InputInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputInterfaceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +212,8 @@
 				CE2030021AAD3F4B002D8057 /* UIImage+MDQRCode.m */,
 				CE202FD51AAD3EC8002D8057 /* InterfaceController.h */,
 				CE202FD61AAD3EC8002D8057 /* InterfaceController.m */,
+				CEDAD0F01AB00FFB00A93B83 /* InputInterfaceController.h */,
+				CEDAD0F11AB00FFB00A93B83 /* InputInterfaceController.m */,
 				CE202FD81AAD3EC8002D8057 /* Images.xcassets */,
 				CE202FD31AAD3EC8002D8057 /* Supporting Files */,
 			);
@@ -459,6 +464,7 @@
 				CE2030041AAD3F4B002D8057 /* mask.c in Sources */,
 				CE2030081AAD3F4B002D8057 /* rscode.c in Sources */,
 				CE2030091AAD3F4B002D8057 /* split.c in Sources */,
+				CEDAD0F21AB00FFB00A93B83 /* InputInterfaceController.m in Sources */,
 				CE2030061AAD3F4B002D8057 /* qrinput.c in Sources */,
 				CE202FD71AAD3EC8002D8057 /* InterfaceController.m in Sources */,
 				CE2030031AAD3F4B002D8057 /* bitstream.c in Sources */,
@@ -732,6 +738,7 @@
 				CE202FC91AAD3EBA002D8057 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE202FCA1AAD3EBA002D8057 /* Build configuration list for PBXNativeTarget "QRGenTests" */ = {
 			isa = XCConfigurationList;
@@ -740,6 +747,7 @@
 				CE202FCC1AAD3EBA002D8057 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE202FEB1AAD3EC8002D8057 /* Build configuration list for PBXNativeTarget "QRGen WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -748,6 +756,7 @@
 				CE202FED1AAD3EC8002D8057 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE202FEE1AAD3EC8002D8057 /* Build configuration list for PBXNativeTarget "QRGen WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -756,6 +765,7 @@
 				CE202FF01AAD3EC8002D8057 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -27,7 +27,9 @@
 
 - (IBAction)save:(id)sender {
   NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.appilogue.documents"];
-  [defaults setObject:[_text text] forKey:@"ShopNumber"];
+  NSString *stopNumber = [_text text];
+  NSLog(@"%@", stopNumber);
+  [defaults setObject:stopNumber forKey:@"ShopNumber"];
 }
 
 @end

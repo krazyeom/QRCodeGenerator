@@ -11,6 +11,8 @@
 
 @interface InterfaceController()
 
+@property (strong, nonatomic) NSString *shopNumber;
+
 @end
 
 
@@ -19,16 +21,17 @@
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
 
-    // Configure interface objects here.
+     // Configure interface objects here.
+  _shopNumber = context;
 }
 
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
   
-  NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.appilogue.documents"];
-  NSString *shopNumber =  [defaults objectForKey:@"ShopNumber"];
-  UIImage *image = [UIImage mdQRCodeForString:shopNumber size:100];
+  int width = [WKInterfaceDevice currentDevice].screenBounds.size.width;
+  
+  UIImage *image = [UIImage mdQRCodeForString:_shopNumber size:width fillColor:[UIColor blackColor]];
   [_QRImageView setImage:image];
 }
 
